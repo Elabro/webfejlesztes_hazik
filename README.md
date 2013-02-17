@@ -1,4 +1,4 @@
 webfejlesztes_hazik
 ===================
 
-Elso hazi!
+ <a href="http://elabro.github.com/webfejlesztes_hazik/" class="code">Az oldalam.</a>

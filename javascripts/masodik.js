@@ -23,4 +23,4 @@ setUp: function () {
 
 }
 }
-document.addEventListener('DOMContentLoaded', setUp);
+document.addEventListener('DOMContentLoaded', myHandler.setUp);

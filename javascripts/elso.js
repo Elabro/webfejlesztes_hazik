@@ -2,10 +2,7 @@ function counter_func(msginputId,ccounter_inputId)
 {	
 	var gomb;
 	var outputContainer;
-        var msglen = msginput.value.length;
- 
-        counter_input.value = msglen;
- 
+       var msglen = msginput.value.length;
 }      
 function onClick() {
         alert( ++msglen + ' szóból áll a szöveg!');

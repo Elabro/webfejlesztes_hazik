@@ -22,4 +22,4 @@ function setUp() {
 return setUp;
 })();
 
-document.addEventListener('DOMContentLoaded', setUp);
+document.addEventListener('DOMContentLoaded', myHandler);

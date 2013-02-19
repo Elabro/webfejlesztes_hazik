@@ -5,11 +5,11 @@ var myHandler = {
  msg: null,
 
 onClick: function() {
-        alert( msginput.value.length + ' szóból áll a szöveg!');
+        alert( myHandler.msginput.value.length + ' szóból áll a szöveg!');
 },
 
 onKeyUp: function (){
-  msg.value = msginput.value.length;
+  myHandler.msg.value = myHandler.msginput.value.length;
 
 },
 

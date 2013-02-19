@@ -1,10 +1,9 @@
 var msginput;
 var gomb;
 var outputContainer;
-var msglen = msginput.value.length;
 
 function onClick() {
-        alert( msglen + ' szóból áll a szöveg!');
+        alert( msginput.value.length + ' szóból áll a szöveg!');
 }
 
 function setUp() {

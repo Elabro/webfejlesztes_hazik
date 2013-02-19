@@ -18,8 +18,8 @@ setUp: function () {
 	myHandler.msginput = document.getElementById('msginput');
         	myHandler.gomb = document.getElementById('gomb');
 	myHandler.outputContainer = document.getElementById('output');
-	myHandler.gomb.addEventListener('click', onClick);
-	myHandler.msginput.addEventListener('keyup', onKeyUp);
+	myHandler.gomb.addEventListener('click', myHandler.onClick);
+	myHandler.msginput.addEventListener('keyup', myHandler.onKeyUp);
 
 }
 }

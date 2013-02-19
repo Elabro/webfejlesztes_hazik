@@ -17,6 +17,7 @@ function setUp() {
         gomb = document.getElementById('gomb');
 	outputContainer = document.getElementById('output');
 	gomb.addEventListener('click', onClick);
+	msginput.addEventListener('keyup', onKeyUp);
 	
 }
 

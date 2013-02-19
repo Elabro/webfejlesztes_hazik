@@ -1,14 +1,14 @@
-function counter_func(msginputId,ccounter_inputId)
-{	
-	var gomb;
-	var outputContainer;
-       var msglen = msginput.value.length;
-}      
+var msginput;
+var gomb;
+var outputContainer;
+var msglen = msginput.value.length;
+
 function onClick() {
-        alert( ++msglen + ' szóból áll a szöveg!');
+        alert( msglen + ' szóból áll a szöveg!');
 }
-        
+
 function setUp() {
+	msginput = document.getElementById('msginput');
         gomb = document.getElementById('gomb');
 	outputContainer = document.getElementById('output');
 	gomb.addEventListener('click', onClick);

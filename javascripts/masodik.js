@@ -5,7 +5,7 @@ var myHandler = {
  msg: null,
 
 onClick: function() {
-        alert( myHandler.msginput.value.length + ' szóból áll a szöveg!');
+        alert( myHandler.msginput.value.length + ' karakterből áll a szöveg!');
 },
 
 onKeyUp: function (){

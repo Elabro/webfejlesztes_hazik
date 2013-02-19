@@ -1,5 +1,8 @@
+
 function counter_func(msginputId,ccounter_inputId)
-{
+{	
+	var gomb;
+	var outputContainer;
         var msginput = document.getElementById(msginputId);
         var counter_input = document.getElementById(counter_inputId);
         var msglen = msginput.value.length;

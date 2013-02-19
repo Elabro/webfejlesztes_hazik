@@ -3,7 +3,7 @@ var myHandler = (function() {
  var msginput, gomb, outputContainer,  msg;
 
 function onClick() {
-        alert( msginput.value.length + ' szóból áll a szöveg!');
+        alert( msginput.value.length + ' karakterből áll a szöveg!');
 }
 
 function onKeyUp(){

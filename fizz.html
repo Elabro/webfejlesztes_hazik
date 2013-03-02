@@ -2,19 +2,9 @@
 <html>
 <body>
 <SCRIPT LANGUAGE="JavaScript">
+var eredmeny;
 for(i = 1; i < 101; i++){
-if((i % 3 == 0)&&(i % 5 == 0)&&(i % 7 == 0)){ eredmeny = "fizzbuzzbizz";
-document.write("<p>" + i + " /  3 és 5  és 7 = " + eredmeny + "</p>");
-}
-else if ((i % 5 == 0)&&( i % 7 == 0)){ eredmeny = "buzzbizz";
-document.write("<p>" + i + " / 5 és 7  = " + eredmeny + "</p>");
-}
-else if((i % 3 == 0 )&&( i % 7 == 0 )){ eredmeny = "fizzbizz";
-document.write("<p>" + i + " / 3 és 7  = " + eredmeny + "</p>");
-}
-else if ((i % 3 == 0) && (i % 5 == 0){ eredmeny = "fizzbuzz";
-document.write("<p>" + i + " / 3 és  5  = " + eredmeny + "</p>");
-}
+
 else if(i % 5 == 0){ eredmeny= "buzz";
 document.write("<p>" + i + " /  5  = " + eredmeny + "</p>");
 }
@@ -27,7 +17,7 @@ else  if( i % 3  == 0 ){  eredmeny= "fizz";
  }
  
  else {
-  document.write("<H2>" + "Nem oszthato 3,5,7!" + "</H2><BR>");
+ document.write("<p>" + i+"Nem oszthato 3,5,7!</p>");
 
   
 }

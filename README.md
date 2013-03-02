@@ -7,4 +7,4 @@ webfejlesztes_hazik
  <p><a href="http://elabro.github.com/webfejlesztes_hazik/harmadik.html" class="code">Harmadik feladat</a></p>
  
  <p><a href="http://elabro.github.com/webfejlesztes_hazik/fizz.html" class="code">fizzbuzzbizz feladat</a></p>
- <p><a href="http://elabro.github.com/webfejlesztes_hazik/plugin.html" class="code">plugin pelda</a></p>
+

@@ -27,28 +27,12 @@
 
 	var container = document.getElementById('container');
 	var input = $('#artist');
-	var auto = 3;
-
 
 	function resetContainer() {
 		container.innerHTML = '';
 	}
 
-	function showArtists( data ) {
-	var availableTags = [];		
-        $.each(data.results.artistmatches.artist, function(key, val) {
-       
-        	availableTags.push(val.name);
-       	});  
-
-
-		$( "#artist" ).autocomplete({
-		source: availableTags
-		});
-
-	}
-
-	function showArtists2( data ) {		
+	function showArtists( data ) {		
         $.each(data.results.artistmatches.artist, function(key, val) {
         var p = document.createElement('p');
         $(p).append('<a href="artist.html?artistname='+ val.name +'">'+val.name + '</a><br />');
@@ -56,16 +40,10 @@
        	});  
 	}
 	
-	$('#artist').keyup(function(){
-		if(input.val().length > auto.val()-1){
-		resetContainer();
-		Last.getList( input.val(), showArtists );}
-	});
-
-		$('#search').click(function(ev){
+	$('#search').click(function(ev){
 		ev.preventDefault();
 		resetContainer();
-		Last.getList( input.val(), showArtists2 );
+		Last.getList( input.val(), showArtists );
 	});
 
 	</script>

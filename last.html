@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="hu">
+
+  <head>
+		<meta charset="utf-8">
+	<title>Last.fm</title>
+	
+	<link rel="stylesheet" href="css/qunit.css" type="text/css" media="screen" />
+</head>
+<body>
+	<h1 id="qunit-header">Last.fm</h1>
+	<h2 id="qunit-banner"></h2>
+	<div id="qunit-testrunner-toolbar"></div>
+	<form>
+		<input id="artist" type="text">
+		<button type="submit" id="search">Search</button>
+	</form>
+	<div id="container">
+		
+	</div>
+<script type="text/javascript" src="libs/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="javascripts/last.js"></script>
+	<script type="text/javascript">
+
+	var container = document.getElementById('container');
+	var input = $('#artist');
+
+	function resetContainer() {
+		container.innerHTML = '';
+	}
+
+	function showArtists( data ) {		
+        $.each(data.results.artistmatches.artist, function(key, val) {
+        var p = document.createElement('p');
+        $(p).append('<a href="artist.html?artistname='+ val.name +'">'+val.name + '</a><br />');
+        container.appendChild(p);
+       	});  
+	}
+	
+	$('#search').click(function(ev){
+		ev.preventDefault();
+		resetContainer();
+		Lastfm.getList( input.val(), showArtists );
+	});
+
+	</script>
+</body>
+</html>

@@ -54,7 +54,7 @@
        	});  
 	}
 	$('#artist').keyup(function(){
-		if(input.value.length > auto.val()-1){
+		if(input.val().length > auto.val()-1){
 		resetContainer();
 		Last.getList( input.val(), showArtists );}
 	});

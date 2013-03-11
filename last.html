@@ -28,7 +28,7 @@
 	var container = document.getElementById('container');
 	var input = $('#artist');
 	var auto = 3;
-	var inputlength = input.val().length;
+
 
 	function resetContainer() {
 		container.innerHTML = '';
@@ -57,7 +57,7 @@
 	}
 	
 	$('#artist').keyup(function(){
-		if(inputlength > auto.val()-1){
+		if(input.val().length > auto.val()-1){
 		resetContainer();
 		Last.getList( input.val(), showArtists );}
 	});

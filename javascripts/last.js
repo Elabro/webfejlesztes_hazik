@@ -1,5 +1,5 @@
 (function() {
-  var Lastfm;
+  var Last;
 
   Last = (function() {
 

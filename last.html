@@ -55,7 +55,9 @@
        	});  
 	}
 	$('#artist').keyup(function(){
-	Last.getList( input.val(), showArtists );
+	  if($(this).val().length > auto.val()-1){
+		resetContainer();
+	Last.getList( input.val(), showArtists ); }
 	});
 	
 	$('#search').click(function(ev){

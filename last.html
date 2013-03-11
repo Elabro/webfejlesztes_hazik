@@ -56,7 +56,7 @@
 	}
 	
 	$('#artist').keyup(function(){
-		if(input.val().length > auto.val()-1){
+		if($('#artist').val().length > auto.val()-1){
 		resetContainer();
 		Last.getList( input.val(), showArtists );}
 	});

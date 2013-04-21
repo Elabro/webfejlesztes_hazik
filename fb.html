@@ -1,0 +1,25 @@
+<html>
+<head>
+  <title>Facebook: Client-side OAuth Example</title>
+  <style type="text/css">
+    body{margin: 0; padding: 10px; font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; }
+    h1{padding: 10px 0; font-size: 18px; font-weight: normal; color: #444; border-bottom: 1px solid #ccc; margin: 0 0 20px;}
+    h2{padding: 10px; font-size:14px; font-weight:normal; color:rgb(45,68,134);}
+    button{padding:20px; font-size:16px; background: rgb(45,68,134);color:#eee;border:none;}
+  </style>
+  <script src="//ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.1.min.js"></script>
+  
+<!-- Loads the Facebook SDK and contains the API calls used for this example-->
+  <script src="./facebook.js"></script>
+  
+</head>
+<body>
+<h1 id="header">Facebook: <strong>Client-side OAuth</strong></h1>
+<h2>This example requires a valid Facebook user to log in. Click the button below to login via OAuth.</h2>
+<div style="text-align:center;"><button id="fb-login">LOGIN TO FACEBOOK</button></div>
+<button id="fb-logout" style="display:none;">Logout of Facebook</button>
+<table id="friends">
+
+</table>
+</body>
+</html>
